@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		403E3AE72461D02C003E3E0B /* SRDPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 403E3AE62461D02C003E3E0B /* SRDPokemon.m */; };
+		403E3B2224620476003E3E0B /* SRDPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403E3B2124620476003E3E0B /* SRDPokemonController.m */; };
 		FBCB8F912461177F001D8C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCB8F902461177F001D8C7C /* AppDelegate.m */; };
 		FBCB8F942461177F001D8C7C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCB8F932461177F001D8C7C /* SceneDelegate.m */; };
 		FBCB8F9A2461177F001D8C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCB8F982461177F001D8C7C /* Main.storyboard */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		403E3AE52461D02C003E3E0B /* SRDPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SRDPokemon.h; path = "Pokedex-C/SRDPokemon.h"; sourceTree = SOURCE_ROOT; };
+		403E3AE62461D02C003E3E0B /* SRDPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SRDPokemon.m; path = "Pokedex-C/SRDPokemon.m"; sourceTree = SOURCE_ROOT; };
+		403E3B2024620476003E3E0B /* SRDPokemonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRDPokemonController.h; sourceTree = "<group>"; };
+		403E3B2124620476003E3E0B /* SRDPokemonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRDPokemonController.m; sourceTree = "<group>"; };
 		FBCB8F8C2461177F001D8C7C /* Pokedex-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokedex-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCB8F8F2461177F001D8C7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBCB8F902461177F001D8C7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +45,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403E3AE32461C28F003E3E0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBCB8F982461177F001D8C7C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		403E3AE42461C2A4003E3E0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				403E3B1E24620458003E3E0B /* Model Controller */,
+				403E3B1F2462045E003E3E0B /* View Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		403E3B1E24620458003E3E0B /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				403E3B2024620476003E3E0B /* SRDPokemonController.h */,
+				403E3B2124620476003E3E0B /* SRDPokemonController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		403E3B1F2462045E003E3E0B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		FBCB8F832461177F001D8C7C = {
 			isa = PBXGroup;
 			children = (
@@ -59,10 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				FBCB8FAC24611EDD001D8C7C /* Model */,
-				FBCB8FAB24611ED3001D8C7C /* Model Controller */,
-				FBCB8FAA24611EC1001D8C7C /* View Controllers */,
+				403E3AE32461C28F003E3E0B /* View */,
+				403E3AE42461C2A4003E3E0B /* Controllers */,
 				FBCB8FA824611E55001D8C7C /* Resources */,
-				FBCB8FA924611EAC001D8C7C /* Storyboards */,
 			);
 			path = "Pokedex-C";
 			sourceTree = "<group>";
@@ -77,36 +115,16 @@
 				FBCB8F922461177F001D8C7C /* SceneDelegate.h */,
 				FBCB8F932461177F001D8C7C /* SceneDelegate.m */,
 				FBCB8FA124611782001D8C7C /* main.m */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		FBCB8FA924611EAC001D8C7C /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				FBCB8F982461177F001D8C7C /* Main.storyboard */,
 				FBCB8F9D24611782001D8C7C /* LaunchScreen.storyboard */,
 			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		FBCB8FAA24611EC1001D8C7C /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		FBCB8FAB24611ED3001D8C7C /* Model Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controller";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FBCB8FAC24611EDD001D8C7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				403E3AE52461D02C003E3E0B /* SRDPokemon.h */,
+				403E3AE62461D02C003E3E0B /* SRDPokemon.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,8 +155,9 @@
 		FBCB8F842461177F001D8C7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SRD;
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = "Karl Pfister";
+				ORGANIZATIONNAME = Shannon;
 				TargetAttributes = {
 					FBCB8F8B2461177F001D8C7C = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -182,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBCB8F912461177F001D8C7C /* AppDelegate.m in Sources */,
+				403E3AE72461D02C003E3E0B /* SRDPokemon.m in Sources */,
+				403E3B2224620476003E3E0B /* SRDPokemonController.m in Sources */,
 				FBCB8FA224611782001D8C7C /* main.m in Sources */,
 				FBCB8F942461177F001D8C7C /* SceneDelegate.m in Sources */,
 			);
